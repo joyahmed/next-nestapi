@@ -1,3 +1,7 @@
+## Worspace to share packages
+
+pnpm-workspace.yaml
+
 # Turborepo starter
 
 This Turborepo starter is maintained by the Turborepo core team.
