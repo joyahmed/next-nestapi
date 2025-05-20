@@ -1,3 +1,4 @@
+import { Gradient } from '@repo/ui/gradient';
 import { lazy } from 'react';
 const CreateProduct = lazy(
 	() => import('./create-product/create-product')
@@ -8,7 +9,11 @@ export const dynamic = 'force-dynamic';
 
 const Home = () => {
 	return (
-		<div className='flex flex-col items-center justify-center w-screen h-screen space-y-5'>
+		<div className='relative flex flex-col items-center justify-center w-screen h-screen space-y-5'>
+			<Gradient
+				className='top-[-500px] opacity-[0.15] w-[1000px] h-[1000px]'
+				conic
+			/>
 			<CreateProduct />
 			<Products />
 		</div>
